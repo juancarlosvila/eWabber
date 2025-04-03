@@ -59,7 +59,7 @@ modules:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-user/eWabber.git
+git clone https://github.com/juancarlosvila/eWabber.git
 cd eWabber
 ```
 
