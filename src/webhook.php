@@ -169,7 +169,7 @@ function generateRandomPassword($length = 12) {
 }
 
 function generateDownloadLink($mediaId) {
-    return "https://wis.chat/eWabberd/download.php?media_id=" . urlencode($mediaId);
+    return "https://" . EJABBERD_VIRTUAL_HOST . "/eWabberd/download.php?media_id=" . urlencode($mediaId);
 }
 
 function sendEjabberdRequest($url, $data) {
