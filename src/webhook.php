@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 // Generar stanza IQ manual
 		$iq_id = uniqid('slot');
-		$iqStanza = "<iq to='upload.wis.chat' type='get' id='{$iq_id}'><request xmlns='urn:xmpp:http:upload:0' filename='{$filename}' size='{$size}' content-type='{$mime_type}'/></iq>";
+		$iqStanza = "<iq to='upload.'" . EJABBERD_VIRTUAL_HOST . " type='get' id='{$iq_id}'><request xmlns='urn:xmpp:http:upload:0' filename='{$filename}' size='{$size}' content-type='{$mime_type}'/></iq>";
                 
 		// Enviar
 		$client->getConnection()->send($iqStanza);
