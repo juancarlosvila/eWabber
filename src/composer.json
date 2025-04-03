@@ -1,0 +1,5 @@
+{
+    "require": {
+        "fabiang/xmpp": "^0.7.0"
+    }
+}
